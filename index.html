@@ -63,7 +63,9 @@
   This paragraph has all 4 inline styles.
 </p>
 
-    <h1 style="color: lawngreen" "> Images</h1>
+    <hr>
+
+    <h1 style="color: lawngreen"; > Images</h1>
     <p>An <b>image element</b> is an <i>inline</i> element which inserts pictures into the document. An image element is self-closing, which means it does not have a closing tag.
     It has one major attribute, src, which is filepath that points to the images' location. those filepaths can either be <b>absolute</b> or <b>relative</b>.</p>
 
@@ -85,22 +87,41 @@
 <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/bloomington/CedarBluffNaturePreserve_447494b6-5056-a36a-06e153b2330a4061.jpg" alt ="cliff edges facing a bunch of trees in an overview." width="50%">
 
 
+<h2>Relative vs. Absolute</h2>
+<p>An <b>absolute</b> filepath includes all the navigation to get to the server, folder and file. The examples above are all absolute file paths.
+    An absolute file paths is used when the image is stored on a different server or device than the HTML document. </p>
 
+    <p>A <b>relative</b> file path only includes folders and files. The example bew\low is a relative file path.
+        A relative filepath is used when the images are store alongside the HTML document</p>
 
+<img src="A.jpeg" width="150px" alt="Coronavirus written in the sand">
 
+<h1 style="color: yellow">Links</h1>
+<p>the <b>anchor element</b> is an <i>inline element</i> and is a way to include hypertext links, otherwise known as just links, in your document.
+An anchor is a reference point for the other documents or files. It commonly has 3 attributes: <i>href, target< and download.</i></p>
 
+<h2>A Simple Link</h2>
+<a href="http://ihasabucket.com/">link</a>
 
+<p>In order for the link to work it <b>MUST</b> include the <i>href</i> attribute. This attribute is the filepath, either absolute or relative, to the document, website or file you wish link. </p>
 
+<h2>Link Attributes</h2>
 
+<p>The <i>target</i> attribute allows you to decide where the links open. There are 4 options, but we will only discuss two in this course.
+    <i>_blank</i> opens w\the linked document in a new tav. <i>_self</i> opens the document in the current window or tab. This will open in a new tab </p>
+<a href="http://ihasabucket.com/" target="_blank">this will open in a new tab.</a>
 
+<p>The <i>download</i> attributes allows you to download the file or document linked and assin it a new filename. this is commonly used only with reletive filepaths.</p>
 
+<a href="A.jpeg"download="Beach">This will download a Beach picture.</a>
 
+<h2>A Picture as link</h2>
+<p>Since a link has an opening and a closing tag, we can place ANY HTML ELEMENT as its content, which includes pictures.
+    we simply nest the img element inside the anchor element.</p>
 
-
-
-
-
-
+<a href="http://ihasabucket.com/" Target="_blank">
+    <img
+</a>
 
 
 
